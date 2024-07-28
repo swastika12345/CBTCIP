@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" contents="width=device-width, initial-scale=1">
+        <title>TO-DO LIST</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="to-do-app">
+            <div class="container">
+                <h2><img src="images/icon.png" width="40" , height="40">&nbsp;&nbsp;TO-DO LIST</h2>
+                <div id="row">
+                    <input type="text"  placeholder="Add Your List">
+                    <button id="add-btn">Add-to-List</button>
+                </div>
+                <div id="tasks">
+                    <p id="pending-task">You have <span class="count-value">0</span> task(s) to complete.
+                </p>
+                </div>
+            </div>
+            <p id="error">Please Enter Some Task</p>
+        </div>
+
+<script src="script.js"></script>
+</body>
+</html>

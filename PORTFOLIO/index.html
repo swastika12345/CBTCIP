@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.jpeg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark " onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span>Swastika</span> <br>Kayal From India</h1>
+        </div>
+    </div>
+ </div> 
+ <!-----------about------------->
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/image1.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    I'm Swastika Kayal, citizen of West Bengal,India.Completed my school life
+                    from Bidya Bharati Girls' High School,Kolkata,West Bengal.Currently 
+                    pursuing B.Tech on Computer Science & Engineering form St. Thomas' College of
+                    Engineering & Technology.Has keen interest in Web Development
+                    and want to pursue my career in it.My hobbies are Swimming, Drawing,
+                    Dancing and others.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Web Designing/App Interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS app</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024 - Pursuing</span><br>B Tech Degree on Computer Science & Engineering (CGPA : 9.25)</li>
+                        <li><span>2021</span><br>Completed Higher Secondary Education (86%)</li>
+                        <li><span>2019</span><br>Appeared for 1st Board Examination-Madhyamik (92%) </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024</span><br>Web App Development Intern @ Cipherbyte Tecnology</li>
+                        <li><span>2022-25 -IEI Member</span><br>Played a student Role in Workshop for IEI</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+<!--------------services----------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Web Designing</h2>
+                <p>Learning and enthusiast with Web Technology and Development</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>IEI Member</h2>
+                <p>Attend Image Processing Workshop as member of IEI Community</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>Social Service</h2>
+                <p>Volunteer in Blood Donation Camp, Tree plantation Program and also 
+                    Take part in Relief Fund Campaign</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------Portfolio------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Personal Portfolio- My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/image8.jpeg">
+                <div class="layer">
+                    <h3>SQL Certificate (HackerRank)</h3>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/image4.jpeg">
+                <div class="layer">
+                    <h3>Workshop in Image Processing</h3>
+                    <p>Workshop based on Image pixel Analysis and Pattern Recognition</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/image7.jpeg">
+                <div class="layer">
+                    <h3>JAVA Certification (HackerRank)</h3>
+                    </div>
+            </div>
+            <div class="work">
+                <img src="images/image2.jpeg">
+                <div class="layer">
+                    <h3>Webinar on Business Model Canvas(BMC)</h3>
+                    <p>Webinar based on Business Strategy and Workforce in Industry</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/image6.jpeg">
+                <div class="layer">
+                    <h3>BASICS OF PYTHON</h3>
+                    <p>Course Provided by Infosys Springboard</p>
+                    </div>
+            </div>
+            <div class="work">
+                <img src="images/image5.jpeg">
+                <div class="layer">
+                    <h3>CAPITAL MARKET</h3>
+                    <p>Course Provided by Infosys Springboard</p>
+                    </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!--------------------------Contact---------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>EMail-swastikakayal234@gmail.com</p>
+                <p>Phone No. - 9073601124 </p>
+                <i class="fa-brands fa-linkedin"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;
+                &nbsp;&nbsp;<i class="fa-brands fa-github"></i>
+                <p>LinkedIn - https://www.linkedin.com/in/swastika-kayal-2a1721314/</p>
+                <p>GitHub - https://github.com/swastika12345</p>
+                <a href="images/Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6"placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright O Swastika. Made as Intern </p>
+    </div>
+</div>
+
+
+ <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+ </script>
+ <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right= "0";
+    }
+    function closemenu(){
+        sidemenu.style.right= "-200px";
+    }
+
+ </script>
+ <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxGvo2CzNKQmuWn0gARkbQAGA-JNgpkHjUrFcrBGt8hbYr6EPFZPcfyyCVB6sHm1cNb/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent Succesfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
